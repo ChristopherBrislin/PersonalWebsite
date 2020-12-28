@@ -5,9 +5,10 @@
 }
 
 .TitleImage {
-    background-image: url(spraying-sugar-cane-2746350.jpg);
+    background-image: url(resources/spraying-sugar-cane-2746350.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
 }
 
@@ -23,7 +24,7 @@
 }
 
 h3 {
-    align-content: center;
+    text-align: center;
 }
 
 p {
@@ -36,7 +37,6 @@ nav {
     align-items: center;
     min-height: 8vh;
     font-family: 'Poppins', sans-serif;
-    background-color: rgba(255, 255, 255, 0.7)
 }
 
 .logo {
@@ -80,8 +80,8 @@ nav {
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 92vh;
-        top: 8vh;
+        height: 100vh;
+        top: 0px;
         flex-direction: column;
         align-items: center;
         width: 50%;
@@ -129,4 +129,16 @@ nav {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.HelloWorld {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.video {
+    display: block;
+    width: 50vw;
+    margin-left: 25vw;
 }
