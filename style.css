@@ -4,20 +4,26 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
 }
 
 .TitleImage {
     background-image: url(resources/spraying-sugar-cane-2746350.jpg);
     background-repeat: no-repeat;
-    background-size:contain;
-    
-    
-    background-attachment: fixed;
-    height: 60vh;
+    background-size: cover;
+   
+    height: 45vh;
 }
 
+.image-break{
+    background-image: url(resources/drone-1245980.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    height: 40vh;
+}
 .navbar {
     position: fixed;
     top: 0px;
@@ -29,23 +35,92 @@ body{
     align-items: center;
     margin-top: 100px;
     display: flex;
+    flex-direction: column;
 }
 
+.about-section h2{
+    font-size: 30px;
+}
+.about-section h1{
+    font-size: 20px;
+    padding: 15px;
+}
+
+.about-section hr{
+    width: 70%;
+    color: gray;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.work-section{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-section h2{
+    font-size: 30px;
+}
+.work-section h1{
+    font-size: 20px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.work-section hr{
+    width: 70%;
+    color: gray;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.work-subdiv{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.work-subdiv p{
+    width: 25vw;
+    margin: 30px;
+    justify-content: space-evenly;
+
+}
+
+.profile-picture{
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+    margin: 30px;
+}
+
+.about-subdiv{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+
+.about-subdiv p{
+    width: 25vw;
+    margin: 30px;
+    justify-content: space-evenly;
+    
+}
 h3 {
     text-align: center;
     padding-bottom: 50px;
 }
 
-p {
-    
-}
+p {}
 
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    
 }
 
 .logo {
@@ -57,7 +132,7 @@ nav {
 .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 35%;
+    width: 50%;
 }
 
 .nav-links li {
@@ -82,7 +157,26 @@ nav {
     transition: all 0.3s ease;
 }
 
+.contact-section{
+    background-color: rgb(188, 255, 238)
+}
+
 @media screen and (max-width: 768px) {
+    .about-subdiv{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-subdiv p{
+        width: 70vw;
+    }
+
+
+
+    .TitleImage{
+        height: 45vh;
+    }
+
     body {
         overflow-x: hidden;
     }
@@ -93,7 +187,7 @@ nav {
         top: 0px;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 65%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         background-color: rgba(255, 255, 255, 0.7)
@@ -109,15 +203,13 @@ nav {
 
 @media screen and (max-width: 1024px) {
     .nav-links {
-        width: 45%;
+        width: 60%;
     }
-
-    .about-section{
+    .about-section {
         flex-direction: column;
         width: 100%;
     }
-
-    .HelloWorld{
+    .HelloWorld {
         width: 100%;
     }
 }
@@ -150,21 +242,20 @@ nav {
 }
 
 .HelloWorld {
-    
     align-items: center;
     width: 60%;
 }
 
-.about-section{
-    
+.about-section {
     margin: 50px;
-   
 }
 
 .video {
     display: block;
-    
-   
     margin-right: 100px;
-    
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
 }

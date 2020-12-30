@@ -1,0 +1,216 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.TitleImage {
+    background-image: url(resources/pexels-vitaly-vlasov-1601217.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    height: 45vh;
+}
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.about-section {
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-section h2{
+    font-size: 30px;
+}
+.about-section h1{
+    font-size: 20px;
+    padding: 15px;
+}
+
+.about-section hr{
+    width: 70%;
+    color: gray;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.profile-picture{
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+    margin: 30px;
+}
+
+.about-subdiv{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+
+.about-subdiv p{
+    width: 25vw;
+    margin: 30px;
+    justify-content: space-evenly;
+}
+h3 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+p {}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.logo {
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: black;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    margin: 5px;
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.contact-section{
+    background-color: rgb(188, 255, 238)
+}
+
+@media screen and (max-width: 768px) {
+    .about-subdiv{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-subdiv p{
+        width: 70vw;
+    }
+
+
+
+    .TitleImage{
+        height: 45vh;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 100vh;
+        top: 0px;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        background-color: rgba(255, 255, 255, 0.7)
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 45%;
+    }
+    .about-section {
+        flex-direction: column;
+        width: 100%;
+    }
+    .HelloWorld {
+        width: 100%;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.HelloWorld {
+    align-items: center;
+    width: 60%;
+}
+
+.about-section {
+    margin: 50px;
+}
+
+.video {
+    display: block;
+    margin-right: 100px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+}
