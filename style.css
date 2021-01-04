@@ -9,7 +9,7 @@ body {
 }
 
 .TitleImage {
-    background-image: url(resources/spraying-sugar-cane-2746350.jpg);
+    background-image: url(resources/dji-4223421.jpg);
     background-repeat: no-repeat;
     background-size: cover;
    
@@ -17,13 +17,24 @@ body {
 }
 
 .image-break{
-    background-image: url(resources/drone-1245980.jpg);
+    background-image: url(resources/franz-harvin-aceituna-vkfrFrAIO4o-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     
 
     height: 40vh;
 }
+
+.image-break2{
+    
+    background-image: url(resources/spraying_cropped.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    height: 40vh;
+}
+
 .navbar {
     position: fixed;
     top: 0px;
@@ -36,15 +47,14 @@ body {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
+    
 }
 
-.about-section h2{
+h2{
     font-size: 30px;
+    
 }
-.about-section h1{
-    font-size: 20px;
-    padding: 15px;
-}
+
 
 .about-section hr{
     width: 70%;
@@ -54,16 +64,16 @@ body {
 }
 
 .work-section{
+    margin-top: 60px;
+    margin-bottom: 30px;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-.work-section h2{
-    font-size: 30px;
-}
-.work-section h1{
+
+h1{
     font-size: 20px;
     padding: 15px;
     margin: 15px;
@@ -90,10 +100,11 @@ body {
 }
 
 .profile-picture{
-    height: 120px;
-    width: 120px;
-    border-radius: 60px;
-    margin: 30px;
+    height: 130px;
+    width: 130px;
+    border-radius: 65px;
+    padding: 10px;
+    background-color: none;
 }
 
 .about-subdiv{
