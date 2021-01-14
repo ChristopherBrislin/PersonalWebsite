@@ -12,6 +12,9 @@ body {
     background-image: url(resources/dji-4223421.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.5;
+    
+    
    
     height: 45vh;
 }
