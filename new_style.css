@@ -4,150 +4,134 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
-    height:100%;
+    height: 100%;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    height:100%;
-    
+    height: 100%;
 }
 
-.fas{
-    color:#1D7686;
+.fas {
+    color: #1D7686;
 }
 
-.fa-star{
-    color:#1D7686;
+.fa-star {
+    color: #1D7686;
 }
 
-.skill-container{
+.skill-container {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     padding-bottom: 5em;
 }
 
-.skill-card{
+.skill-card {
     display: flex;
     flex-direction: column;
-    align-items:flex-end;
+    align-items: flex-end;
     width: 350px;
-    
-
 }
 
-.landing-section{
-    background-image:url(resources/white-2566231.jpg);
-
+.landing-section {
+    background-image: url(resources/white-2566231.jpg);
     height: 80%;
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center -200px;
-
-    
-
 }
 
-.header{
+.header {
     align-items: center;
-    display:flex;
+    display: flex;
     justify-content: center;
     padding: 2em;
     width: 100%
 }
 
-.about{
-   height: 50%;
+.about {
+    height: auto;
 }
 
-.projects{
+.projects {
     background-color: white;
+    height: auto;
 }
 
-.projects a{
-    
+.projects a {
     text-decoration: none;
-    color:#242424;
+    color: #242424;
 }
 
-
-h4{
-    color:#1D7686;
+h4 {
+    color: #1D7686;
     font-size: 20px;
-
 }
 
-.image-break2{
+.image-break2 {
     background-image: url(resources/clement-helardot-95YRwf6CNw8-unsplash.jpg);
     height: 60%;
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.work{
+.work {
     background-color: #FFFCEF;
-    height: 85%;
-    
-    
+    height: auto;
 }
 
-.cont-container{
+.cont-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.work-card-container{
-    
+.work-card-container {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
 
-.work-card{
+.work-card {
     background-color: white;
     display: flex;
-    
     width: 70vw;
     margin: 2em;
     box-shadow: 0px 5px 15px #777777;
 }
 
-.work-title{
+.work-title {
     width: 100%;
     margin: 1em;
-    
 }
 
-.work-desc{
+.work-desc {
     margin: 1em;
 }
 
-
-.image-break{
+.image-break {
     background-image: url(resources/agri_drone_img_break.png);
-    background-size:contain;
+    background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position-y: bottom;
-    
 }
 
-h1{
+h1 {
     font-size: 30px;
     font-weight: 100;
-    color:#1D7686;
+    color: #1D7686;
     background-color: inherit;
     padding-left: 5vw;
     padding-right: 5vw;
 }
 
-.dash{
+.dash {
     background-color: #1D7686;
     width: 20%;
     height: 1px;
@@ -155,12 +139,11 @@ h1{
 
 nav {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
     min-height: 6vh;
     margin-top: 0.5em;
     margin-right: 1.5em;
-    
 }
 
 .navbar {
@@ -170,63 +153,59 @@ nav {
 }
 
 .title {
-    
     padding-left: 0.5em;
 }
-h2{
+
+h2 {
     font-size: 55px;
-    font-weight:100;
+    font-weight: 100;
     letter-spacing: 5px;
     padding: 0.5em;
 }
 
-h3{
+h3 {
     color: #1D7686;
     font-size: 25px;
-    font-weight:bold;
+    font-weight: bold;
     padding: 0.2em;
     padding-left: 1.2em;
-   
 }
 
-.card-container{
+.card-container {
     display: flex;
     justify-content: center;
     margin: 5em;
 }
 
-.profile-picture{
+.profile-picture {
     background-image: url(resources/Profile.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 2em;
     width: 150px;
     height: 150px;
-
     border-radius: 75px;
 }
 
-.card{
+.card {
     width: 50vw;
     height: 100%;
     padding: 1em;
     color: #4B4B4B;
     font-size: 15px;
     margin: 2em;
-
     box-shadow: 0px 5px 15px #777777;
 }
 
-
-#project{
+#project {
     width: 35vw;
-    height:45vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.project-images{
+.project-images {
     width: 80%;
     margin: 1.5em 0 1.5em 0;
 }
@@ -247,19 +226,16 @@ h3{
     color: #242424;
 }
 
-.contact{
+.contact {
     text-decoration: none;
     background-color: #1D7686;
     color: white;
     padding: 5px 15px 5px 15px;
     border-radius: 25px;
-
 }
-
 
 .burger {
     display: none;
-    
 }
 
 .burger div {
@@ -270,52 +246,49 @@ h3{
     transition: all 0.3s ease;
 }
 
-.contact-section{
+.contact-section {
     background-color: rgb(117, 116, 112);
-    
-    display:flex;
+    display: flex;
     flex-direction: column;
-   
     align-items: center;
 }
 
-.contact-section h1{
+.contact-section h1 {
     color: white;
 }
-.contact-section .dash{
+
+.contact-section .dash {
     background-color: white;
 }
 
-.link-container{
+.link-container {
     justify-self: center;
     display: flex;
     justify-content: space-around;
     width: 50vw;
-    height:50vh;
+    height: 50vh;
 }
-.contact-links{
+
+.contact-links {
     text-decoration: none;
     color: white;
     font-size: 6em;
 }
 
 @media screen and (max-width: 768px) {
-
-    #project{
+    #project {
         width: 70vw;
     }
     body {
         overflow-x: hidden;
     }
-    .other-links{
-        color:white;
+    .other-links {
+        color: white;
     }
-
-    .card-container{
+    .card-container {
         flex-direction: column;
         align-items: center;
     }
-
     .nav-links {
         position: absolute;
         right: 0px;
@@ -338,16 +311,12 @@ h3{
 }
 
 @media screen and (max-width: 1024px) {
-
-
     body {
         overflow-x: hidden;
     }
-
-    .other-links{
-        color:white;
+    .other-links {
+        color: white;
     }
-
     .nav-links {
         position: absolute;
         right: 0px;
@@ -367,25 +336,20 @@ h3{
         display: block;
         cursor: pointer;
     }
-
-    .skill-card{
+    .skill-card {
         width: 290px;
     }
-
-    h3{
+    h3 {
         font-size: 18px;
     }
-    p{
+    p {
         font-size: 14px;
     }
-
-    
 }
 
 .nav-active {
     transform: translateX(0%);
 }
-
 
 @keyframes navLinkFade {
     from {
