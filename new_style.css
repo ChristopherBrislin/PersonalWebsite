@@ -52,6 +52,7 @@ body {
     display:flex;
     justify-content: center;
     padding: 2em;
+    width: 100%
 }
 
 .about{
@@ -251,6 +252,7 @@ h3{
 
 }
 
+
 .burger {
     display: none;
     
@@ -266,6 +268,11 @@ h3{
 
 .contact-section{
     background-color: rgb(117, 116, 112);
+    
+    display:flex;
+    flex-direction: column;
+   
+    align-items: center;
 }
 
 .contact-section h1{
@@ -273,6 +280,19 @@ h3{
 }
 .contact-section .dash{
     background-color: white;
+}
+
+.link-container{
+    justify-self: center;
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    height:50vh;
+}
+.contact-links{
+    text-decoration: none;
+    color: white;
+    font-size: 6em;
 }
 
 @media screen and (max-width: 768px) {
@@ -314,13 +334,48 @@ h3{
 }
 
 @media screen and (max-width: 1024px) {
-    .nav-links {
-        width: 60%;
+
+
+    body {
+        overflow-x: hidden;
     }
 
-    #project{
-        
+    .other-links{
+        color:white;
     }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 100vh;
+        top: 0px;
+        flex-direction: column;
+        align-items: center;
+        width: 65%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        background-color: #1D7686;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .skill-card{
+        width: 45vw;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+    p{
+        font-size: 14px;
+    }
+
+    
 }
 
 .nav-active {
