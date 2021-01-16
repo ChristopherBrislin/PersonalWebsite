@@ -385,11 +385,7 @@ h3 {
     }
     
 
-    .landing-section{
-        background-attachment:scroll;
-        background-position: center center;
-        height: 100vh;
-    }
+    
 
     .work-card{
         flex-direction: column;
@@ -410,10 +406,7 @@ h3 {
 
     
 
-    .image-break2{
-        background-attachment: scroll;
-    }
-
+    
     body {
         overflow-x: hidden;
     }
@@ -508,6 +501,18 @@ h3 {
 }
 
 @media screen and (max-width: 1024px) {
+
+    .landing-section{
+        background-attachment:scroll;
+        background-position: center center;
+        height: 100vh;
+    }
+
+    .image-break2{
+        background-attachment: scroll;
+    }
+
+
     body {
         overflow-x: hidden;
     }
