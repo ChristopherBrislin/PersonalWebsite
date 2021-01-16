@@ -32,13 +32,13 @@ body {
     display:inline-block;
     
     height: 165px;
-    width: 350px;
+    width: 360px;
     
 }
 
 .skill-card p:hover{
     background-color:lightgray;
-    font-size: 17px;
+    transform: scale(1.02);
     
     
 }
@@ -227,6 +227,7 @@ h3 {
     background-image: url(resources/Profile.png);
     background-repeat: no-repeat;
     background-size: cover;
+    border: 2px #4B4B4B;
     margin: 2em;
     width: 150px;
     height: 150px;
@@ -234,18 +235,19 @@ h3 {
 }
 
 .score{
-    display: inline-block;
+    display: block;
     float: right;
 }
 
 .card {
     width: 50vw;
     height: auto;
-    padding: 1em;
+    padding: 2em;
     color: #4B4B4B;
     font-size: 15px;
     margin: 2em;
     box-shadow: 0px 5px 15px #777777;
+    text-align: justify;
 }
 
 #project {
@@ -256,6 +258,7 @@ h3 {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    transition: 0.3s;
 }
 
 #project p{
@@ -265,6 +268,11 @@ h3 {
 #project .external{
     
     text-align: left;
+}
+
+#project:hover{
+    transform: scale(1.02);
+
 }
 
 
@@ -281,6 +289,19 @@ h3 {
 
 .nav-links li {
     list-style: none;
+    transition: 0.3s;
+}
+
+.nav-links li:hover{
+    transform: scale(1.07);
+}
+.work-desc a{
+    text-decoration: none;
+    color: #1D7686;
+}
+
+.work-desc a:hover{
+    text-decoration: underline;
 }
 
 .other-links {
@@ -296,6 +317,8 @@ h3 {
     padding: 5px 15px 5px 15px;
     border-radius: 25px;
 }
+
+
 
 .burger {
     display: none;
@@ -329,13 +352,19 @@ h3 {
     display: flex;
     justify-content: space-around;
     width: 50vw;
-    height: auto;
+    height: 170px;
 }
 
 .contact-links {
     text-decoration: none;
     color: white;
     font-size: 6em;
+    transition: 0.3s;
+}
+
+.contact-links:hover{
+    transform: scale(1.07);
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -444,6 +473,7 @@ h3 {
 }
 
 .toggle .line1 {
+    background-color: white;
     transform: rotate(-45deg) translate(-5px, 5px);
 }
 
@@ -452,5 +482,6 @@ h3 {
 }
 
 .toggle .line3 {
+    background-color: white;
     transform: rotate(45deg) translate(-5px, -5px);
 }
