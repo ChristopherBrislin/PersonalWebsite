@@ -163,13 +163,6 @@ footer .card{
     text-align: center;
 }
 
-.image-break {
-    background-image: url(resources/agri_drone_img_break.png);
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-}
 
 h1 {
     font-size: 30px;
@@ -374,6 +367,98 @@ h3 {
 .contact-links:hover{
     transform: scale(1.07);
     
+}
+
+@media screen and (max-width: 400px){
+    
+    .contact-links{
+        font-size: 4em;
+    
+    }
+    .link-container{
+        width: 100vw;
+        justify-content: space-around;
+    }
+   
+    .projects .card{
+        width: 90vw;
+    }
+    
+
+    .landing-section{
+        background-attachment:scroll;
+        background-position: center center;
+        height: 100vh;
+    }
+
+    .work-card{
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .skill-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skill-card{
+        
+        height: auto;
+        
+    }
+
+    
+
+    .image-break2{
+        background-attachment: scroll;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .card{
+        width: 90vw;
+    }
+
+    .other-links {
+        color: white;
+    }
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 100vh;
+        top: 0px;
+        flex-direction: column;
+        align-items: center;
+        width: 65%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        background-color: #1D7686;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .profile-picture{
+       
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    }
+
+    .profile-container .card{
+    width: 50vw;
+}
 }
 
 @media screen and (max-width: 768px) {
